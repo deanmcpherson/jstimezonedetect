@@ -121,7 +121,7 @@ var jstz = (function () {
          */
         get_from_internationalization_api = function get_from_internationalization_api() {
             var format, timezone;
-            if (!Intl || typeof Intl === "undefined" || typeof Intl.DateTimeFormat === "undefined") {
+            if (!window.Intl || typeof Intl === "undefined" || typeof Intl.DateTimeFormat === "undefined") {
                 return;
             }
 
